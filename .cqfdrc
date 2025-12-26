@@ -4,10 +4,10 @@ name='vim_workshop'
 
 [build]
 command='nvim -u init.lua README.md'
-docker_run_args='--detach-keys=ctrl-a,x'
+docker_run_args="--detach-keys=ctrl-a,x --volume config:$HOME/.config"
 
 [vim]
-command='vim README.md'
-docker_run_args='--detach-keys=ctrl-a,x'
+command='vim -u init.vim README.md'
+docker_run_args="--detach-keys=ctrl-a,x --volume config:$HOME/.config"
 
 # vim: ft=ini
