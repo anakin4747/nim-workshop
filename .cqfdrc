@@ -1,0 +1,13 @@
+[project]
+org='lwa'
+name='vim_workshop'
+
+[build]
+command='nvim -u init.lua README.md'
+docker_run_args='--detach-keys=ctrl-a,x'
+
+[vim]
+command='vim README.md'
+docker_run_args='--detach-keys=ctrl-a,x'
+
+# vim: ft=ini
