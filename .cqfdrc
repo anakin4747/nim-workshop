@@ -3,11 +3,11 @@ org='lwa'
 name='vim_workshop'
 
 [build]
-command='nvim -u init.lua README.md'
+command='nvim -u init.lua init.lua init.vim README.md'
 docker_run_args="--detach-keys=ctrl-a,x --volume config:$HOME/.config"
 
 [vim]
-command='vim -u init.vim README.md'
+command='vim -u init.vim init.vim README.md'
 docker_run_args="--detach-keys=ctrl-a,x --volume config:$HOME/.config"
 
 # vim: ft=ini
