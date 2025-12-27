@@ -28,21 +28,22 @@ See :help options
 Some options I highly recommend are:
 
 ```vim
-set number          " Show line number
-set nowrap          " Don't wrap long lines
-set textwidth=80    " Go to new line at 81 characters
-set virtualedit=all " Ability to move anywhere
-set list            " Show all whitespace
-set shiftwidth=4    " Specifies indent width
-set tabstop=4       " Specifies how many spaces in a tab
-set smartindent     " Automatic indenting
-set expandtab       " Always expand tabs to spaces
-set nohlsearch      " After searching remove highlight
-set incsearch       " Show incremental matches while searching
-set undofile        " Make undo history persist exiting vim
-set noswapfile      " Don't use swapfiles
-set nobackup        " Don't save .bak backups
-set termguicolors   " Enables 24-bit RGB color
+set number              " Show line number
+set nowrap              " Don't wrap long lines
+set textwidth=80        " Go to new line after 80 characters
+set virtualedit=all     " Ability to move anywhere
+set list                " Show all whitespace
+set shiftwidth=4        " Specifies indent width
+set tabstop=4           " Specifies how many spaces in a tab
+set smartindent         " Automatic indenting
+set expandtab           " Always expand tabs to spaces
+set nohlsearch          " After searching remove highlight
+set incsearch           " Show incremental matches while searching
+set undofile            " Make undo history persist exiting vim
+set noswapfile          " Don't use swapfiles
+set nobackup            " Don't save .bak backups
+set termguicolors       " Enables 24-bit RGB color
+set signcolumn=number   " Place errors over number columns to avoid jitter
 ```
 
 ```lua
